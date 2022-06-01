@@ -134,11 +134,11 @@ function blinkColor(color) {
     let colorButton = document.getElementById(color);
     console.log(color);
     colorButton.style.background = "blue";  
-    setTimeout(() => {colorButton.style.background = "Black"}, 1000);
+    setTimeout(() => {colorButton.style.background = "Black"}, 500);
 }
 function blinkColor1(color) {
     let colorButton = document.getElementById(color);
     console.log(color);
     colorButton.style.background = "green";  
-    setTimeout(() => {colorButton.style.background = "Black"}, 1000);
+    setTimeout(() => {colorButton.style.background = "Black"}, 250);
 }
