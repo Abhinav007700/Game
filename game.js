@@ -43,7 +43,8 @@ function next(){
         unique_element(j);
         setTimeout(function(){
             for(y of p){
-                blinkColor(y);
+                var e=p.indexOf(y);
+                delay(e);
             }
         }, 1000);
         setTimeout(function(){
@@ -53,6 +54,11 @@ function next(){
             document.getElementById("demo1").innerHTML = " ";
             enable_button();
         }, 2000);
+}
+function delay(e){
+    setTimeout(function(){
+        blinkColor(p[e]);
+    },200*(e+1));
 }
 function unique_element(j){
     if (p.includes(String(j))){
