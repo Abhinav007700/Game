@@ -58,7 +58,7 @@ function next(){
 function delay(e){
     setTimeout(function(){
         blinkColor(p[e]);
-    },200*(e+1));
+    },500*(e+1));
 }
 function unique_element(j){
     if (p.includes(String(j))){
