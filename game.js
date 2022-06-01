@@ -105,7 +105,7 @@ function enable_button(){
 }
 function finish(){
     alert("Congratulations, Game successfully completed");
-    document.getElementById("demo").innerHTML = "Score: "+String((x-1)*25);
+    document.getElementById("demo").innerHTML = "Score: "+String((x)*25);
     p=[];
     x=1;
 }
@@ -122,7 +122,7 @@ function compare(b){
         }
 }
 function end(){
-    document.getElementById("demo").innerHTML = "Score: "+String((x-1)*25);
+    document.getElementById("demo").innerHTML = "Score: "+String((x)*25);
     alert('Game over');
     p=[];
     q=[];
