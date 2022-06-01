@@ -49,11 +49,11 @@ function next(){
         }, 1000);
         setTimeout(function(){
             document.getElementById("demo1").innerHTML = "Your turn!";
-        }, 1500);
+        }, 1500+500*(p.length));
         setTimeout(function(){
             document.getElementById("demo1").innerHTML = " ";
             enable_button();
-        }, 2000);
+        }, 2000+500*(p.length));
 }
 function delay(e){
     setTimeout(function(){
