@@ -19,6 +19,7 @@ var b=null;
 var p=[];
 var q=[];
 var x=1;
+disable_button();
 function tapped(){
     if (this.id !=undefined){
         b=String(this.id);
