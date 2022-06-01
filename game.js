@@ -40,11 +40,21 @@ function next(){
         if (p.length==16){
             finish();
         }
+        disable_button();
         var j=randomNumber();
         unique_element(j);
-        for(y of p){
-            blinkColor(y); // have to make delay here
-        }
+        setTimeout(function(){
+            for(y of p){
+                blinkColor(y);
+            }
+        }, 1000);
+        setTimeout(function(){
+            document.getElementById("demo1").innerHTML = "Your turn!";
+        }, 1500);
+        setTimeout(function(){
+            document.getElementById("demo1").innerHTML = " ";
+            enable_button();
+        }, 2000);
 }
 function unique_element(j){
     if (p.includes(String(j))){
@@ -56,9 +66,45 @@ function unique_element(j){
         console.log(p);
     }
 }
+function disable_button(){
+    document.getElementById('0').disabled = true;
+    document.getElementById('1').disabled = true;
+    document.getElementById('2').disabled = true;
+    document.getElementById('3').disabled = true;
+    document.getElementById('4').disabled = true;
+    document.getElementById('5').disabled = true;
+    document.getElementById('6').disabled = true;
+    document.getElementById('7').disabled = true;
+    document.getElementById('8').disabled = true;
+    document.getElementById('9').disabled = true;
+    document.getElementById('10').disabled = true;
+    document.getElementById('11').disabled = true;
+    document.getElementById('12').disabled = true;
+    document.getElementById('13').disabled = true;
+    document.getElementById('14').disabled = true;
+    document.getElementById('15').disabled = true;
+}
+function enable_button(){
+    document.getElementById('0').disabled = false;
+    document.getElementById('1').disabled = false;
+    document.getElementById('2').disabled = false;
+    document.getElementById('3').disabled = false;
+    document.getElementById('4').disabled = false;
+    document.getElementById('5').disabled = false;
+    document.getElementById('6').disabled = false;
+    document.getElementById('7').disabled = false;
+    document.getElementById('8').disabled = false;
+    document.getElementById('9').disabled = false;
+    document.getElementById('10').disabled = false;
+    document.getElementById('11').disabled = false;
+    document.getElementById('12').disabled = false;
+    document.getElementById('13').disabled = false;
+    document.getElementById('14').disabled = false;
+    document.getElementById('15').disabled = false;
+}
 function finish(){
     alert("Congratulations, Game successfully completed");
-    document.getElementById("demo").innerHTML = "Score: "+String(x-1);
+    document.getElementById("demo").innerHTML = "Score: "+String((x-1)*25);
     p=[];
     x=1;
 }
@@ -75,7 +121,7 @@ function compare(b){
         }
 }
 function end(){
-    document.getElementById("demo").innerHTML = "Score: "+String(x-1);
+    document.getElementById("demo").innerHTML = "Score: "+String((x-1)*25);
     alert('Game over');
     p=[];
     q=[];
