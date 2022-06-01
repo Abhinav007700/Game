@@ -38,9 +38,6 @@ function doit(){
     next();
 }
 function next(){
-        if (p.length==16){
-            finish();
-        }
         disable_button();
         var j=randomNumber();
         unique_element(j);
@@ -59,8 +56,8 @@ function next(){
 }
 function unique_element(j){
     if (p.includes(String(j))){
-        var x=randomNumber();
-        unique_element(x);
+        var w=randomNumber();
+        unique_element(w);
     }
     else{
         p.push(String(j));
@@ -105,16 +102,24 @@ function enable_button(){
 }
 function finish(){
     alert("Congratulations, Game successfully completed");
-    document.getElementById("demo").innerHTML = "Score: "+String((x)*25);
+    document.getElementById("demo").innerHTML = "Score: "+String((x-1)*25);
+    disable_button();
     p=[];
     x=1;
 }
 function compare(b){
         if (p.includes(b)){
             if(p.length == q.length){
-                next();
-                x+=1;
-                q=[];
+                if (p.length==16){
+                    x+=1;
+                    finish();
+                }
+                else{
+                    next();
+                    x+=1;
+                    q=[];
+                }
+                
             }
         }
         else{
@@ -122,8 +127,9 @@ function compare(b){
         }
 }
 function end(){
-    document.getElementById("demo").innerHTML = "Score: "+String((x)*25);
+    document.getElementById("demo").innerHTML = "Score: "+String((x-1)*25);
     alert('Game over');
+    disable_button();
     p=[];
     q=[];
     x=1;
