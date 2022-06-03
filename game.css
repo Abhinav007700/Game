@@ -12,6 +12,15 @@ h1{
   left: 48%;
   top: 20%;
 }
+.home{
+  margin: 0;
+  height: 30px;
+  width: 70px;
+  border-radius: 8px;
+  background: #000;
+  color: #ffffff;
+  border: 2px solid #ffa500;
+}
 h3{
   text-align: center;
   color: #ffffff;
