@@ -41,7 +41,7 @@ h3.n2{
     text-align: center;
     font-size: 40px;
 }
-.nextgame{
+.homegame{
     margin: 0;
     height: 30px;
     width: 150px;
@@ -52,4 +52,15 @@ h3.n2{
     background: #000;
     color: #ffffff;
     border: 2px solid #ffa500;
-  }
+}
+.data{
+    position: fixed;
+    top: 35%;
+    border: 2px solid black;
+}
+.data1{
+    position: fixed;
+    top: 35%;
+    left: 80%;
+    border: 2px solid black;
+}
