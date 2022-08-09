@@ -1,55 +1,55 @@
-body{
-    background: rgb(0, 213, 255);
+*{
+  box-sizing: border-box;
 }
 h1{
-    text-align: center;
-    color: black;
+  text-align: center;
+  color: #ffffff;
 }
-h3.n0{
-    text-align: center;
-    color: black;
-    animation: blinker 1s linear infinite;
+.button{
+  height: 30px;
+  width: 70px;
+  position: fixed;
+  left: 48%;
+  top: 20%;
 }
-@keyframes blinker {
-    50% {
-      opacity: 0;
-    }
+.home{
+  margin: 0;
+  height: 30px;
+  width: 70px;
+  position: fixed;
+  top: 10px;
+  left: 2px;
+  border-radius: 8px;
+  background: #000;
+  color: #ffffff;
+  border: 2px solid #ffa500;
 }
-h3.n1{
-    color: black;
-    position: fixed;
-    top: 100px;
-    left: 25px;
+h3{
+  text-align: center;
+  color: #ffffff;
 }
-h3.n2{
-    color: black;
-    position: fixed;
-    top: 100px;
-    left: 1275px;
+h4{
+  text-align: center;
+  color: #ffffff;
 }
-.box{
-    position: fixed;
-    left: 30%;
-    top: 15%;
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 50px 110px 110px 110px 110px 110px;
+body {
+  background: #333;
+}
+.gridbox {
+  height: 500px;
+  width: 500px;
+  position: fixed;
+  left: 37%;
+  top: 30%;
 }
 .g1{
-    border: 2px solid black;
-    background-color: white;
-    text-align: center;
-    font-size: 40px;
+  height: 100px;
+  width: 100px;
+  background: #000;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
 }
-.nextgame{
-    margin: 0;
-    height: 30px;
-    width: 150px;
-    position: fixed;
-    top: 10px;
-    left: 2px;
-    border-radius: 8px;
-    background: #000;
-    color: #ffffff;
-    border: 2px solid #ffa500;
-  }
+
+
+
+
