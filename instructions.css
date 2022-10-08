@@ -1,9 +1,9 @@
 body {
-    background: #333;
+    background: black;
 }
 h1{
     text-align: center;
-    color: #ffffff;
+    color: #0000ff;
 }
 .home{
     margin: 0;
@@ -15,8 +15,8 @@ h1{
     border: 2px solid #ffa500;
 }
 h3{
-    color: #ffffff;
+    color: red;
 }
 li{
-    color: #ffffff;
+    color: rgb(2, 255, 2);
 }
