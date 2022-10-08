@@ -15,6 +15,7 @@ document.getElementById('12').onclick=tapped;
 document.getElementById('13').onclick=tapped;
 document.getElementById('14').onclick=tapped;
 document.getElementById('15').onclick=tapped;
+document.querySelector("button").disabled = false;
 var b=null;
 var p=[];
 var q=[];
@@ -34,6 +35,7 @@ function tapped(){
     }
 }
 function doit(){
+    document.querySelector("button").disabled = true;
     document.getElementById("demo").innerHTML = " ";
     next();
 }
@@ -112,6 +114,10 @@ function finish(){
     disable_button();
     p=[];
     x=1;
+    setTimeout(()=>{
+        document.getElementById("demo").innerHTML = " ";
+        document.querySelector("button").disabled = false;
+    },750);
 }
 function compare(b){
         if (p.includes(b)){
@@ -133,12 +139,16 @@ function compare(b){
         }
 }
 function end(){
-    document.getElementById("demo").innerHTML = "Score: "+String((x-1)*25);
     alert('Game over');
+    document.getElementById("demo").innerHTML = "Score: "+String((x-1)*25);
     disable_button();
     p=[];
     q=[];
     x=1;
+    setTimeout(()=>{
+        document.getElementById("demo").innerHTML = " ";
+        document.querySelector("button").disabled = false;
+    },750);
 }
 function randomNumber(){
     return Math.floor((Math.random() * 16));

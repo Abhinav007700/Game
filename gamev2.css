@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+  }
+  body {
+    background: black;
+  }
+  h1{
+    text-align: center;
+    color: #ff0000;
+  }
+  .button{
+    height: 30px;
+    width: 70px;
+    position: fixed;
+    left: 48%;
+    top: 20%;
+    color: #ff0000;
+    background-color: black;
+    border: 2px solid #ff0000;
+  }
+  .home{
+    margin: 0;
+    height: 30px;
+    width: 70px;
+    position: fixed;
+    top: 10px;
+    left: 2px;
+    border-radius: 8px;
+    background: #000;
+    color: #ffffff;
+    border: 2px solid #ffa500;
+  }
+  h3{
+    text-align: center;
+    color: #ff0000;
+  }
+  h4{
+    text-align: center;
+    color: #ff0000;
+  }
+  .gridbox {
+    height: 500px;
+    width: 500px;
+    position: fixed;
+    left: 37%;
+    top: 30%;
+  }
+  .g1{
+    height: 100px;
+    width: 100px;
+    background: #000;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+  }
