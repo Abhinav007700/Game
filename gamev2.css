@@ -11,7 +11,7 @@
   .button{
     height: 30px;
     width: 70px;
-    position: fixed;
+    position: absolute;
     left: 48%;
     top: 20%;
     color: #ff0000;
@@ -22,7 +22,7 @@
     margin: 0;
     height: 30px;
     width: 70px;
-    position: fixed;
+    position: absolute;
     top: 10px;
     left: 2px;
     border-radius: 8px;
@@ -41,7 +41,7 @@
   .gridbox {
     height: 500px;
     width: 500px;
-    position: fixed;
+    position: absolute;
     left: 37%;
     top: 30%;
   }
