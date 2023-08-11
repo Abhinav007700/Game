@@ -61,11 +61,11 @@ h4{
   }
   .gridbox{
     width: 350px;
-    left: 2%;
+    left: 6%;
   }
   .g1{
-    height: 55px;
-    width: 55px;
+    height: 50px;
+    width: 50px;
   }
   [class*="col-"] {
     width: 100%;
