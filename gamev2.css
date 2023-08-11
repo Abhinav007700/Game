@@ -52,3 +52,22 @@
     border: 2px solid #ff0000;
     border-radius: 8px;
   }
+  @media only screen and (max-width: 768px) {
+    .home{
+      top: 80px;
+    }
+    .button{
+      left: 40%;
+    }
+    .gridbox{
+      width: 300px;
+      left: 10%;
+    }
+    .g1{
+      height: 70px;
+      width: 70px;
+    }
+    [class*="col-"] {
+      width: 100%;
+    }
+  }

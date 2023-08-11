@@ -83,3 +83,26 @@ h1{
   color: #ffffff;
   border: 2px solid #ffff00;
 }
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size: 34px;
+  }
+  .b1{
+    left: 25%;
+  }
+  .b2{
+    left: 25%;
+  }.b3{
+    left: 25%;
+  }.b4{
+    left: 25%;
+  }.b5{
+    left: 25%;
+  }
+  .b6{
+    left: 25%;
+  }
+  [class*="col-"] {
+    width: 100%;
+  }
+}
